@@ -8,7 +8,8 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRC =	ft_printf.c \
 		ft_hex.c	\
-		function.c	\
+		ft_str.c	\
+		ft_num.c	\
 
 OBJECTS = $(SRC:.c=.o)
 
@@ -18,9 +19,6 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $(OBJECTS)
-
-%.o : %.c $(INCLUDES)
-	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	rm -rf $(OBJECTS)
