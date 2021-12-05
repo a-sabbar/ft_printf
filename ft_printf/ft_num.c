@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   function.c                                         :+:      :+:    :+:   */
+/*   ft_num.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 10:38:23 by asabbar           #+#    #+#             */
-/*   Updated: 2021/12/03 13:18:27 by asabbar          ###   ########.fr       */
+/*   Created: 2021/12/05 11:19:26 by asabbar           #+#    #+#             */
+/*   Updated: 2021/12/05 11:20:14 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,31 +25,6 @@ long	ft_lennb(long long n)
 		len++;
 	}
 	return (len);
-}
-
-int	ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return (1);
-}
-
-int	ft_putstr(char	*c)
-{
-	int		i;
-	int		len;
-
-	i = 0;
-	if (!c)
-	{
-		len = ft_putstr("(null)");
-		return (len);
-	}
-	while (c[i] != '\0')
-	{
-		write(1, &c[i], 1);
-		i++;
-	}
-	return (i);
 }
 
 int	ft_putnbr(int nb)
