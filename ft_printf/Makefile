@@ -23,7 +23,7 @@ $(NAME): $(OBJECTS)
 	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
-	rm -rf $(OBJECTS) $(OBJECTSB)
+	rm -rf $(OBJECTS)
 
 fclean: clean
 	rm -rf $(NAME)
