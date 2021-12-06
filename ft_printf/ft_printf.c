@@ -28,8 +28,9 @@ int	ft_next(char c, va_list	ap)
 		return (ft_x(va_arg(ap, unsigned int), c));
 	else if (c == '%')
 		return (ft_putchar('%'));
-	else
-		return (0);
+	else if (ft_isprint(c))
+		return (ft_putchar(c));
+	return (0);
 }
 
 int	ft_printf(const char *format, ...)
