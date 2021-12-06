@@ -36,3 +36,12 @@ int	ft_putstr(char	*c)
 	}
 	return (i);
 }
+
+int	ft_isprint(int c)
+{
+	if (c >= 32 && c <= 126 && c != 'c' && c != 's'
+		&& c != 'd' && c != 'i' && c != 'x' && c != 'X' && c != '%')
+		return (1);
+	else
+		return (0);
+}
