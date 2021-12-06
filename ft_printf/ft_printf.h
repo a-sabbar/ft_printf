@@ -26,6 +26,6 @@ int		ft_x(unsigned int n, char c);
 int		ft_p(unsigned long long n);
 int		ft_x1(unsigned long n);
 int		ft_printf(const char *format, ...);
-int   ft_isprint(int c);
+int		ft_isprint(int c);
 
 #endif
