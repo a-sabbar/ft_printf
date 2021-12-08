@@ -37,14 +37,6 @@ int	ft_putstr(char	*c)
 	return (i);
 }
 
-int	ft_isdigit(int c)
-{
-	if (c < 48 || c > 57)
-		return (0);
-	else
-		return (1);
-}
-
 int	ft_isprint(int c)
 {
 	if (c != 'c' && c != 's' && c != 'd' && c != 'i'
