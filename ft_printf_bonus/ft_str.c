@@ -47,8 +47,8 @@ int	ft_isdigit(int c)
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126 && c != 'c' && c != 's'
-		&& c != 'd' && c != 'i' && c != 'x' && c != 'X' && c != '%' && c != 'p')
+	if (c != 'c' && c != 's' && c != 'd' && c != 'i'
+		&& c != 'x' && c != 'X' && c != '%' && c != 'p' && c != 'u')
 	{
 		return (1);
 	}
