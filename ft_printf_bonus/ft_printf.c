@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 22:26:59 by asabbar           #+#    #+#             */
-/*   Updated: 2021/12/07 12:25:31 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/12/08 10:53:08 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_start(int i, int x, const char *format, va_list	ap)
 		{
 			i++;
 			while ((format[i] == ' ' || format[i] == '#'
-					|| format[i] == '+' ) && format[i])
+					|| format[i] == '+' || ft_isprint(format[i])) && format[i])
 				i++;
 			if (format[i])
 			{

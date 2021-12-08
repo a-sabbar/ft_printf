@@ -6,13 +6,14 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 21:28:03 by asabbar           #+#    #+#             */
-/*   Updated: 2021/12/07 12:19:25 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/12/08 12:15:54 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
 

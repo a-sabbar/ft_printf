@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:17:44 by asabbar           #+#    #+#             */
-/*   Updated: 2021/12/07 12:19:29 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/12/08 10:30:55 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,5 @@ int	ft_next(char c, va_list	ap)
 		return (ft_x(va_arg(ap, unsigned int), c));
 	else if (c == '%')
 		return (ft_putchar('%'));
-	else if (ft_isprint(c))
-		return (ft_putchar(c));
-	return (0);
+	return (ft_putchar(c));
 }

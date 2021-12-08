@@ -21,6 +21,9 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $(OBJECTS)
 
+%.o : %.c $(INCLUDES)
+	$(CC) $(CFLAGS) -o $@ -c $<
+
 bonus: $(NAME) $(OBJECTS)
 	$(AR) $^
 clean:
