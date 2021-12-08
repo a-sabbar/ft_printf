@@ -27,7 +27,6 @@ int		ft_p(unsigned long long n);
 int		ft_x1(unsigned long n);
 int		ft_printf(const char *format, ...);
 int		ft_isprint(int c);
-int		ft_isdigit(int c);
 int		ft_next(char c, va_list	ap);
 int		ft_next0(const char *c, int i, va_list	tmp);
 int		ft_xbonus(const char *c, int i, int x);
