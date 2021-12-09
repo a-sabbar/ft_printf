@@ -33,6 +33,7 @@ int	ft_next(char c, va_list	ap)
 	return (0);
 }
 
+
 int	ft_printf(const char *format, ...)
 {
 	int		i;
